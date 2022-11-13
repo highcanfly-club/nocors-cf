@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "Lokalise.i18n-ally",
+    "Crowdin.vscode-crowdin",
+    "ms-vscode.vscode-node-azure-pack",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

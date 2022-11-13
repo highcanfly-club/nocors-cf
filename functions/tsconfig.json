@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowSyntheticDefaultImports":true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "lib": ["ESNext"],
+    "types": ["@cloudflare/workers-types"],
+    "typeRoots": [
+      "../node_modules/@types"],
+    "paths": {
+      "@/*": [
+        "../src/*"
+      ]
+    }
+  }
+}
