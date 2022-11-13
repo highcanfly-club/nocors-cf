@@ -10,7 +10,7 @@
     "create-crt": "openssl x509 -req -in localhost.csr -out localhost.pem -sha256 -CA localhost-rootCA.pem -days 3600 -CAkey localhost-rootCA.key -CAcreateserial -CAserial localhost-rootCA.srl",
     "create-cert": "npm run create-ca && npm run create-key && npm run create-csr && npm run create-crt",
     "dev": "NODE_EXTRA_CA_CERTS=`pwd`/localhost-rootCA.pem npx wrangler pages dev --local-protocol https -- npx vite",
-    "build": "vite build",
+    "build": "npm run prepare-env && vite build",
     "preview": "NODE_EXTRA_CA_CERTS=`pwd`/localhost-rootCA.pem npx wrangler pages dev --local-protocol https -- npx vite preview",
     "prepare-env": "node --loader ts-node/esm ./prepare-env.ts"
   },
