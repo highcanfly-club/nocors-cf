@@ -10,10 +10,14 @@ or carrefully open to anything
 ```js
 const WHITELIST_REGEX=/.*/
 ```
-Just prefix your fetch() calls with https://YOURSITE/api/proxy?url=  .  
+Just prefix your fetch() calls with https://YOURSITE/proxy?url=  .  
   
 Personnaly I define the whitelist as an environment variable in GitHub secrets, next /prepare-env.ts is ran at build time for generating an /functions/common/config/whitelistConf.json  
 see .github/workflows/azure-static-web-apps-green-plant-03f95ab03.yml 
+
+## Demo deployement
+https://nocors.pages.dev/proxy?url=https://www.example.org   
+
 
 ## Vue 3 + Vite + Typescript + Tailwindcss + Cloudflare Pages
 
