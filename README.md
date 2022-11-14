@@ -13,7 +13,7 @@ const WHITELIST_REGEX=/.*/
 Just prefix your fetch() calls with https://YOURSITE/proxy?url=  .  
   
 Personnaly I define the whitelist as an environment variable in GitHub secrets, next /prepare-env.ts is ran at build time for generating an /functions/common/config/whitelistConf.json  
-see .github/workflows/azure-static-web-apps-green-plant-03f95ab03.yml 
+see [prepare-env.ts](https://github.com/highcanfly-club/nocors-cf/blob/main/prepare-env.ts#L3)
 
 ## Demo deployement
 https://nocors.pages.dev/proxy?url=https://www.example.org   
