@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "@sctg/nocors-pages": "^0.9.13"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.18.0",
