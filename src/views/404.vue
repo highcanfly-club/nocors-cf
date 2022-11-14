@@ -14,7 +14,7 @@
           </div>
           <div class="mb-20 md:mb-0">
             <button class="text-lg font-light outline-none focus:outline-none transform transition-all hover:scale-110 text-yellow-500 hover:text-yellow-600">
-              <i class="mdi mdi-arrow-left mr-2"></i><a href="https://github.com/highcanfly-club/nocors">Back</a>
+              <i class="mdi mdi-arrow-left mr-2"></i><a href="https://github.com/highcanfly-club/nocors-cf">Back</a>
             </button>
           </div>
         </div>
