@@ -1,14 +1,21 @@
 # Simplest noCors proxy for Cloudflare Pages
 
 This is a very minimalistic proxy for enabling CORS on non CORS enabled sites.  
-Integrate /functions in your Cloudflare Pages
-Edit /functions/proxy.ts WHITELIST_REGEX to match your requirement 
+It uses https://github.com/highcanfly-club/nocors @sctg/nocors-pages ES2019 module
+```sh
+npm i --save @sctg/nocors-pages
+```
+create /functions/proxy.ts like
 ```js
-const WHITELIST_REGEX=/https:\/\/YOURSITE.com\/.*/
+const WHITELIST_REGEX="https://YOURSITE.com/.*""
+import {proxyPagesRequest} from "@sctg/nocors-pages"
+export const onRequest: PagesFunction = async (context) => {
+  return proxyPagesRequest(context,WHITELIST_REGEX)
+};
 ```
 or carrefully open to anything 
 ```js
-const WHITELIST_REGEX=/.*/
+const WHITELIST_REGEX=".*"
 ```
 Just prefix your fetch() calls with https://YOURSITE/proxy?url=  .  
   
